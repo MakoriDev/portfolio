@@ -2,8 +2,7 @@ from flask import Flask, render_template, request
 from flask_pymongo import PyMongo
 
 app = Flask(__name__, static_folder='static')
-app.config['STATIC_FOLDER'] = ['static', 'assets']
-app.config['MONGO_URI'] = 'mongodb://localhost:27017/portfolio' 
+app.config['MONGO_URI'] = 'mongodb://localhost:27017/portfolio'
 mongo = PyMongo(app)
 
 @app.route('/', methods=['GET', 'POST'])
@@ -18,6 +17,10 @@ def index():
         return 'Your Message is sent successfully!'
     else:
         return render_template('index.html')
+
+@app.route('/blog')
+def blog():
+    return render_template('blog.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

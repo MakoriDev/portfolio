@@ -1,0 +1,73 @@
+/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  #container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+    color: #333333;
+  }
+  p {
+    color: #666666;
+  }
+  #posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .post {
+    width: 30%;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .post h2 {
+    font-size: 18px;
+    padding: 10px;
+  }
+  .post p {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .post a {
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: #333333;
+    text-decoration: none;
+  }
+  .post a:hover {
+    color: #0099ff
+  }
+
+
+
+  #top {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    
+    
+  }
+  
+  .actions {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .actions li {
+    margin-right: 5px; /* Adjust this value as needed */
+  }
+  
